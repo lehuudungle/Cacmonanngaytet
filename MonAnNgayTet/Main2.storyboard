@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MonAnNgayTet" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="6ON-Gk-zFX">
+                                <rect key="frame" x="0.0" y="116" width="320" height="432"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="80" id="0bE-Nv-Xjb" customClass="Cell" customModule="MonAnNgayTet" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="320" height="80"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="0bE-Nv-Xjb" id="x6r-Uy-723">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="79"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="mah-Sa-0wc">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="116"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="mah-Sa-0wc" secondAttribute="trailing" id="5Mh-HO-xCQ"/>
+                            <constraint firstItem="6ON-Gk-zFX" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="96" id="Cj4-SP-JsE"/>
+                            <constraint firstItem="6ON-Gk-zFX" firstAttribute="top" secondItem="mah-Sa-0wc" secondAttribute="bottom" id="XFR-dJ-X3y"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="6ON-Gk-zFX" secondAttribute="bottom" constant="20" id="cD6-vy-IjY"/>
+                            <constraint firstItem="mah-Sa-0wc" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="cUQ-Ez-rHn"/>
+                            <constraint firstItem="mah-Sa-0wc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="kB5-Nk-Ai5"/>
+                            <constraint firstAttribute="trailing" secondItem="6ON-Gk-zFX" secondAttribute="trailing" id="psC-NB-9wn"/>
+                            <constraint firstItem="6ON-Gk-zFX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="sdP-O8-EqN"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="myTableView" destination="6ON-Gk-zFX" id="r9h-XF-sYa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="69" y="402"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="logo" width="320" height="91"/>
+    </resources>
+</document>

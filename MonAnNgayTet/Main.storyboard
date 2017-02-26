@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="wQ7-dm-eiX">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="wPa-nW-qP1">
+            <objects>
+                <viewController id="xSw-wR-z05" customClass="ViewController" customModule="MonAnNgayTet" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="h1G-H1-i3E"/>
+                        <viewControllerLayoutGuide type="bottom" id="GhK-7o-qau"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="BF5-Ie-4G8">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="stB-aH-0U5">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="213"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="213" id="HWh-we-ih1"/>
+                                </constraints>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="32" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="nMO-Od-Eac">
+                                <rect key="frame" x="0.0" y="172" width="320" height="396"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="MlQ-Wa-svf" customClass="Cell" customModule="MonAnNgayTet" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="320" height="32"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="MlQ-Wa-svf" id="i8Y-2J-spv">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="31"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="nMO-Od-Eac" firstAttribute="top" secondItem="h1G-H1-i3E" secondAttribute="bottom" constant="108" id="B9a-cp-oD9"/>
+                            <constraint firstAttribute="trailing" secondItem="nMO-Od-Eac" secondAttribute="trailing" id="DQe-fv-dWi"/>
+                            <constraint firstItem="GhK-7o-qau" firstAttribute="top" secondItem="nMO-Od-Eac" secondAttribute="bottom" id="PJ2-vl-pV4"/>
+                            <constraint firstItem="stB-aH-0U5" firstAttribute="leading" secondItem="BF5-Ie-4G8" secondAttribute="leading" id="Q3y-g3-RCT"/>
+                            <constraint firstAttribute="trailing" secondItem="stB-aH-0U5" secondAttribute="trailing" id="QQK-Og-CtG"/>
+                            <constraint firstItem="nMO-Od-Eac" firstAttribute="leading" secondItem="BF5-Ie-4G8" secondAttribute="leading" id="m5v-dW-P3g"/>
+                            <constraint firstItem="stB-aH-0U5" firstAttribute="top" secondItem="BF5-Ie-4G8" secondAttribute="top" id="syr-EP-zd2"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="qnw-Y2-l6n"/>
+                    <connections>
+                        <outlet property="myTableView" destination="nMO-Od-Eac" id="ViX-Iy-1kN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SMY-Rd-DCM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="535" y="329"/>
+        </scene>
+        <!--DetailVC-->
+        <scene sceneID="aYm-4c-LOF">
+            <objects>
+                <viewController storyboardIdentifier="DetailVC" id="nDO-2Q-98p" customClass="DetailVC" customModule="MonAnNgayTet" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2Wa-1B-Xaf"/>
+                        <viewControllerLayoutGuide type="bottom" id="ang-um-3cV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ztw-LD-uIk">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1Em-RB-ZCd">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="300"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="47e-b0-OSB"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="NOf-Dt-UT9">
+                                <rect key="frame" x="0.0" y="353" width="320" height="215"/>
+                                <color key="backgroundColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thành phần: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EbN-Zb-qhp">
+                                <rect key="frame" x="0.0" y="300" width="119" height="39"/>
+                                <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="119" id="Lyb-gi-MWX"/>
+                                    <constraint firstAttribute="height" constant="39" id="UEd-Pd-LTe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="1Em-RB-ZCd" secondAttribute="trailing" id="ADn-lF-vBO"/>
+                            <constraint firstItem="EbN-Zb-qhp" firstAttribute="leading" secondItem="ztw-LD-uIk" secondAttribute="leading" id="EpA-m5-YQj"/>
+                            <constraint firstItem="NOf-Dt-UT9" firstAttribute="top" secondItem="EbN-Zb-qhp" secondAttribute="bottom" id="G60-ZY-PK5"/>
+                            <constraint firstItem="EbN-Zb-qhp" firstAttribute="top" secondItem="1Em-RB-ZCd" secondAttribute="bottom" id="Ogo-P9-KAP"/>
+                            <constraint firstItem="NOf-Dt-UT9" firstAttribute="leading" secondItem="ztw-LD-uIk" secondAttribute="leading" id="Qbe-dM-IWV"/>
+                            <constraint firstItem="1Em-RB-ZCd" firstAttribute="leading" secondItem="ztw-LD-uIk" secondAttribute="leading" id="bif-8J-H8f"/>
+                            <constraint firstAttribute="trailing" secondItem="NOf-Dt-UT9" secondAttribute="trailing" id="fwb-bk-bkp"/>
+                            <constraint firstItem="ang-um-3cV" firstAttribute="top" secondItem="NOf-Dt-UT9" secondAttribute="bottom" id="jJb-tS-sNl"/>
+                            <constraint firstItem="1Em-RB-ZCd" firstAttribute="top" secondItem="ztw-LD-uIk" secondAttribute="top" id="qPz-uZ-kO5"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imgFood" destination="1Em-RB-ZCd" id="fUA-eQ-17R"/>
+                        <outlet property="ingredientText" destination="NOf-Dt-UT9" id="73a-wa-BWa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JSZ-EE-tNk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1005" y="368"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="cHH-kI-QxZ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="wQ7-dm-eiX" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="peI-Tu-fzS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="xSw-wR-z05" kind="relationship" relationship="rootViewController" id="GqF-Yh-FJm"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Oqc-Cj-N2C" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3" y="329"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="logo" width="320" height="91"/>
+    </resources>
+</document>
